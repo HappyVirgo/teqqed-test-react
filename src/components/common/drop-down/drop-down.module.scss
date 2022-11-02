@@ -1,0 +1,63 @@
+.dropDownComponent {
+  position: relative;
+  margin-bottom: 10px;
+  border: none;
+  &_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+
+    &_Type {
+      color: #5e6263;
+    }
+
+    &_Value {
+      color: #191c1f;
+    }
+
+    &_Icon {
+    }
+  }
+
+  &_List {
+    width: calc(100% + 20px);
+    position: absolute;
+    top: calc(100% + 20px);
+    padding: 20px 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.02em;
+    color: #191c1f;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+    z-index: 1;
+    &_Item {
+      padding: 0 20px;
+      &_Selected {
+        padding: 0 20px;
+        color: #ffffff;
+        background: #ec7f07;
+      }
+    }
+    &_Item:hover {
+      cursor: pointer;
+      background: rgba(236, 127, 7, 0.1);
+    }
+  }
+}

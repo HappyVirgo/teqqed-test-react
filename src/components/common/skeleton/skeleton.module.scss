@@ -1,0 +1,25 @@
+.skeleton {
+  display: flex;
+  margin-bottom: 20px;
+
+  .loadingImageMask {
+    width: 260px;
+    height: 160px;
+    background-color: #f2f2f2;
+  }
+
+  .maskGroup {
+    margin-left: 20px;
+
+    .loadingMask {
+      width: 200px;
+      height: 21px;
+      background: #f2f2f2;
+      margin-bottom: 10px;
+    }
+    .loadingMask:first-child {
+      width: 360px;
+      height: 24px;
+    }
+  }
+}

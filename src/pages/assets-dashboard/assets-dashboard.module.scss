@@ -1,0 +1,32 @@
+$layout-breakpoint-small: 768px;
+
+.assetsPage {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 120px;
+
+  display: flex;
+
+  aside.filterPanel {
+    min-width: 300px;
+    margin-right: 40px;
+  }
+
+  main.main {
+    flex-grow: 1;
+    padding: 0 10px;
+
+    .searchPanel {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .assetsPage {
+    flex-direction: column;
+    aside.filterPanel {
+      margin-left: 40px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+$layout-breakpoint-small: 768px;
+
+.assetItemWrapper {
+  display: flex;
+
+  .assetImage {
+    margin: 0 20px 20px 0;
+  }
+  .assetInfo {
+    .assetTitle {
+      margin-bottom: 10px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #191c1f;
+    }
+    .assetLocation {
+      margin-bottom: 10px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #5e6263;
+    }
+    .assetRoomInfo {
+      margin-bottom: 12px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #5e6263;
+    }
+    .assetPrice {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #191c1f;
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .assetItemWrapper {
+    flex-direction: column;
+    padding: 0 20px;
+    .assetImage {
+      margin: 0;
+    }
+    .assetInfo {
+      margin-bottom: 20px;
+    }
+  }
+}
